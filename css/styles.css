@@ -1,0 +1,154 @@
+/* importo fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap");
+
+/* fuente general y fondo */
+body {
+  background-image: url("../img/background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.titulos {
+  color: rgb(41, 106, 61);
+}
+.como-ofertar {
+  color: rgb(255, 255, 255);
+}
+
+.historia {
+  color: white;
+}
+
+.ofertas-destacadas p {
+  color: white;
+}
+/* titulos con fuente local */
+h1,
+h2,
+h3 {
+  font-family: "Bahnschrift", serif;
+  text-align: center;
+  margin: 20px 0;
+}
+h1 {
+  color: aqua;
+  font-size: 55px;
+}
+h2 {
+  color: rgb(41, 106, 61);
+  font-size: 33px;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+}
+/* párrafos */
+p {
+  font-size: 23px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 10px auto;
+  padding: 5px;
+  width: 90%;
+}
+/* cont valores y ofertas con Flex */
+.contenedor-valores,
+.contenedor-servicios,
+.contenedor-ofertas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+/* footer con flex y box mod */
+footer.pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-top: 2px solid #ccc;
+}
+.color-navbar {
+  background-color: #cafacb;
+}
+.card-oferta {
+  background-color: #cafacb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-oferta:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.boton-oferta {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+.boton-oferta:hover {
+  background-color: #218838; /* tono más oscuro al pasar el mouse */
+}
+.nav-item {
+  transition: transform 0.5s ease;
+}
+.nav-item:hover {
+  transform: scale(1.1);
+}
+.form-label {
+  color: white;
+}
+
+/* a partir de acá, son ajustes de la navbar para que el logo quede bien y mas abajo los media queries*/
+.navbar-brand {
+  position: relative;
+  height: 60px; /* fijé una altura de la navbar */
+}
+.navbar-brand img.logo {
+  /*ajustes del logo en resoluciones normales o de pc */
+  position: absolute;
+  top: 40%;
+  left: 0;
+  height: 40px;
+  transform: translateY(-50%) scale(3);
+}
+/* pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+/* pantallas chicas (celulares) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
