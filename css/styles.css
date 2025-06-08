@@ -139,6 +139,15 @@ footer.pie {
 
 /* pantallas chicas (celulares) */
 @media (max-width: 576px) {
+  .navbar-brand img.logo {
+  /*ajustes del logo en resoluciones normales o de pc */
+  position: absolute;
+  top: 40%;
+  left: 30px;
+  height: 40px;
+  transform: translateY(-50%) scale(3);
+}
+  
   h1 {
     font-size: 40px;
   }
